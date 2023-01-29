@@ -197,17 +197,53 @@ color: hsl(267deg 33% 28%);
 }
 .hero-right span:nth-of-type(3){
     top: 75%;
-    left: 45%;
+    left: 35%;
     z-index: 3;
     animation-delay:8s ;
 }
 .hero-right span:nth-of-type(4){
     top: 55%;
-    left: 75%;
+    left: 50%;
     z-index: 3;
     animation-delay:9s ;
 }
 
+
+@media screen and (max-width:770px){
+    .hero-right span:nth-of-type(2){
+        top: 35%;
+        left: 5%;
+        z-index: 1;
+        animation-delay:7s ;
+    }  
+    .hero-left{
+        position: absolute;
+    inset: 15%;
+    background-color: #00000026;
+    border-radius: 30px;
+    padding: 4vw;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
 
 @keyframes float {
     from{
